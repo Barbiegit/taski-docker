@@ -111,10 +111,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
-    with:
-      context: ./gateway/
-      push: true
-      tags: zakosyachnaya/taski_gateway:latest
+        with:
+          context: ./gateway/
+          push: true
+          tags: zakosyachnaya/taski_gateway:latest
   deploy:
     runs-on: ubuntu-latest
     needs:
