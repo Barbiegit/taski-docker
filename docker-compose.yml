@@ -16,6 +16,8 @@ services:
     build: ./backend/
     env_file: .env
     # Тут подключаем volume к backend
+    depends_on:
+      - db
     volumes:
       - static:/backend_static
   frontend:
