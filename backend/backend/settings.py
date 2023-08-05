@@ -13,7 +13,7 @@ SECRET_KEY = (os.getenv("SECRET_KEY", ""),)
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["158.160.2.118", "127.0.0.1", "localhost", "babama.ddns.net"]
+ALLOWED_HOSTS = ["158.160.2.118", "127.0.0.1", "localhost", "checkmate-obama.ddns.net"]
 
 
 # Application definition
