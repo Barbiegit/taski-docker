@@ -30,6 +30,6 @@ services:
     build: ./gateway/
     # А тут подключаем volume со статикой к gateway
     volumes:
-      - static:/staticfiles/
+      - static:/static/
     ports:
       - 8000:80
