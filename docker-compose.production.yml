@@ -28,9 +28,7 @@ services:
   gateway:
     image: zakosyachnaya/taski_gateway  # Качаем с Docker Hub
     env_file: .env
-    depends_on:
-      - db
     volumes:
-      - static_volume:/static/
+      - static_volume:/staticfiles/
     ports:
       - 8000:80
